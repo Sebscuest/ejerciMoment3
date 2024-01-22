@@ -1,7 +1,15 @@
 'use strict'
 
-let recipeMap = new Map([['pepino', 500], ['tomates', 350], ['cebollas', 50]]);
-
-for (let vegetable of recipeMap.keys()) {
-  console.log(vegetable); // pepino, tomates, cebollas
-}
+let poblacionPorCiudad = new Map([
+    ['guayaquil', 3000000],
+    ['quito', 2000000],
+    ['cuenca', 1000000]
+  ]);
+  
+  let totalPoblacion = 0;
+  for (let poblacion of poblacionPorCiudad.values()) {
+    totalPoblacion += poblacion;
+  }
+  
+  console.log('La población total de las ciudades es: ' + totalPoblacion);
+  
