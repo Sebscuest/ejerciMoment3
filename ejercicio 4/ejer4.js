@@ -11,5 +11,5 @@ let poblacionPorCiudad = new Map([
     totalPoblacion += poblacion;
   }
   
-  console.log('La población total de las ciudades es: ' + totalPoblacion);
+  alert('La población total de las ciudades es: ' + totalPoblacion);
   
